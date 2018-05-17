@@ -1,5 +1,12 @@
 
 
+* { 
+  box-sizing: border-box;
+
+}
+
+
+
 h1 {
 	font-family: "Georgia", Times, "Times New Roman", serif;
 	font-weight: bold;
@@ -25,9 +32,30 @@ p {
 }
 
 
+#masthead {
+   position:fixed;
+   z-index: 99;
+   width: 100%;
+   margin: 0 0 30px;
+   overflow: auto;
+   color: #ffff;
+   background: #fff;
+   border-bottom: 2px solid #ccc;
+
+}
+
+.container    {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+
  .navbar {
-    margin-left: 870px;
+    margin-right: 870px;
     padding-top: 30px;
+    margin-top: 25px;
 
  }
 
@@ -209,7 +237,7 @@ article {
 	margin-top: 126px;
 }
 .hang {
-   background-image: url("file:///Users/annetteyeager/Desktop/Basic-Portfolio/assets/images/portfolio_basic_images/baseball.jpg");
+   
    background-repeat: no-repeat;
    background-size: 264px 196px;
    width: 264px;
@@ -218,7 +246,7 @@ article {
    float: left;
 }
 .rpg {
-   background-image: url("file:///Users/annetteyeager/Desktop/Basic-Portfolio/assets/images/portfolio_basic_images/ants.jpg");
+   
    background-repeat: no-repeat;
    background-size: 260px 200px;
    width: 264px;
@@ -228,7 +256,7 @@ article {
    
 }
 .trivia {
-   background-image: url("file:///Users/annetteyeager/Desktop/Basic-Portfolio/assets/images/portfolio_basic_images/city.jpg");
+   
    background-repeat: no-repeat;
    background-size: 264px 196px;
    width: 264px;
@@ -238,7 +266,7 @@ article {
    float: left;
 }
 .rutgers {
-   background-image: url("file:///Users/annetteyeager/Desktop/Basic-Portfolio/assets/images/portfolio_basic_images/surf.jpg");
+   
    background-repeat: no-repeat;
    background-size: 264px 196px;
    width: 264px;
@@ -246,9 +274,13 @@ article {
    margin-top: 54px;
    margin-right: 34px;
    float: right;
+
+
+
+   
 }
 .rock {
-   background-image: url("file:///Users/annetteyeager/Desktop/Basic-Portfolio/assets/images/portfolio_basic_images/burger.jpg");
+   
    background-repeat: no-repeat;
    background-size: 264px 196px;
    width: 264px;
@@ -272,3 +304,34 @@ footer {
        position:relative;
        bottom:-150px;
 }
+
+
+  @media screen and (max-width: 980px) {
+
+    body { 
+      background: lightblue;
+      font-size: 80px;
+      background-image: url('images/portfolio_basic_images/ants.jpg')
+      
+      
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+
+  body {
+    background: lightblue;
+    font-size: 80px;
+  }
+
+  
+
+
+  @media screen and (max-width: 640px)  {
+    body  {
+      background: lightblue;
+      font-size: 80px;
+    }
+
+  }
